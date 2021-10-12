@@ -30,4 +30,11 @@ export class NoComunesComponent {
     // this.clientes.shift(); // borra el primero
     this.clientes.pop(); // borra el último
   }
+
+  // keyValue Pipe
+  persona = {
+    nombre :'Kilian',
+    edad: 29,
+    direccion: 'Madrid, España'
+  }
 }
