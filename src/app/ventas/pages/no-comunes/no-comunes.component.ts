@@ -22,4 +22,12 @@ export class NoComunesComponent {
     '=2': 'tenemos 2 clientes esperando.',
     'other': 'tenemos # clientes esperando.'
   };
+  cambiarCliente(){
+    this.nombre = 'Maria';
+    this.genero = 'femenino'
+  }
+  borrarCliente(){
+    // this.clientes.shift(); // borra el primero
+    this.clientes.pop(); // borra el último
+  }
 }
