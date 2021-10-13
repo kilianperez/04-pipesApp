@@ -10,6 +10,7 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 export class OrdenarComponent {
 
   enMayusculas: boolean = true;
+  ordenarPor: string = '';
 
   heroe: Heroe[] = [
     {
@@ -41,5 +42,8 @@ export class OrdenarComponent {
   ];
   cambiar(){
     this.enMayusculas = !this.enMayusculas;
+  }
+  cambiarOrden(valor: string){
+    this.ordenarPor = valor;
   }
 }
